@@ -18,7 +18,7 @@ const Contact = (props) => (
                         <textarea name="message" id="message" rows="6"></textarea>
                     </div>
                     <ul className="actions">
-                        <li><button type="submit" value="Send Message" className="special" /></li>
+                        <li><button type="submit" value="Send Message" className="special">Send Message</button></li>
                     </ul>
                 </form>
             </section>
@@ -39,9 +39,6 @@ const Contact = (props) => (
                     <div className="contact-method">
                         <span className="icon alt fa-home"></span>
                         <h3>Address</h3>
-                        <span>1234 Somewhere Road #5432<br />
-                        Nashville, TN 00000<br />
-                        United States of America</span>
                     </div>
                 </section>
             </section>
