@@ -18,8 +18,7 @@ const Contact = (props) => (
                         <textarea name="message" id="message" rows="6"></textarea>
                     </div>
                     <ul className="actions">
-                        <li><input type="submit" value="Send Message" className="special" /></li>
-                        <li><input type="reset" value="Clear" /></li>
+                        <li><button type="submit" value="Send Message" className="special" /></li>
                     </ul>
                 </form>
             </section>
