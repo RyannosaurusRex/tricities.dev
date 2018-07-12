@@ -4,7 +4,7 @@ const Contact = (props) => (
     <section id="contact">
         <div className="inner">
             <section>
-                <form method="post" action="#">
+                <form method="post" action="#" netlify>
                     <div className="field half first">
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" />
@@ -27,8 +27,7 @@ const Contact = (props) => (
                 <section>
                     <div className="contact-method">
                         <span className="icon alt fa-slack"></span>
-                        <h3>Join us on Slack!</h3>
-                        <a href="https://tridevs.herokuapp.com">TriDevs Slack</a>
+                        <h3><a href="https://tridevs.herokuapp.com">TriDevs on Slack!</a></h3>
                     </div>
                 </section>
                 <section>
