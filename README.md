@@ -1,13 +1,13 @@
-# gatsby-starter-forty
-Gatsby starter based on the Forty site template, designed by [HTML5 UP](https://html5up.net/forty). Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
+# TriDev's Future Site
+The goal of the [TriDev meetup](https://meetup.com/tridev) has always been to bring 
+developers together in our region. The meetup has always been an important 
+part of that, but recently we've expanded to Slack, and tried 
+to bring together more meetups and more people who can't make it 
+out to the meetup together. This site aims to be a starting point 
+for developers, designers, and tech entrepreneurs to network, grow their 
+careers and businesses, improve both technical and soft skills, and promote the Tri-Cities
+Tennessee region.
 
 ## Preview
 
-http://gatsby-forty.surge.sh/
-
-## Installation
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-starter-forty https://github.com/ChangoMan/gatsby-starter-forty`
-
-Run `gatsby develop` in the terminal to start.
+[https://gifted-murdock-fd078f.netlify.com/](https://gifted-murdock-fd078f.netlify.com/)

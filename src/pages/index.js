@@ -28,15 +28,16 @@ class HomeIndex extends React.Component {
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
                             <header className="major">
-                                <h3>The Meetup</h3>
-                                <p>Join us the 2nd Tuesdy of every month at 6PM</p>
+                                <h3>Meetups</h3>
+                                <p>Check out some of the local developer meetups.</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            {/*<a href="https://meetup.com/TriDev" className="link primary"></a>*/}
+                            <Link to="/meetups" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic02})`}}>
                             <header className="major">
-                                <h3>Tempus</h3>
-                                <p>feugiat amet tempus</p>
+                                <h3>Speakers</h3>
+                                <p>Need a speaker for your meetup or local event??</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>

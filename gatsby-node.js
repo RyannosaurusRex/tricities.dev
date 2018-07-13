@@ -10,6 +10,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     const pages = []
     const blogPost = path.resolve("./src/templates/blog-post.js")
+    const person = path.resolve("./src/templates/person.js")
+    const meetup = path.resolve("./src/templates/meetup.js")
     resolve(
       graphql(
         `
@@ -18,7 +20,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges {
             node {
               frontmatter {
-                path
+                path,
+                twitter
               }
             }
           }
@@ -33,10 +36,29 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // Create blog posts pages.
         _.each(result.data.allMarkdownRemark.edges, edge => {
-          createPage({
-            path: edge.node.frontmatter.path,
-            component: blogPost
-          })
+          switch (edge.node.frontmatter.type) {
+            case "person": {
+              createPage({
+                path: edge.node.frontmatter.path,
+                component: person
+              })
+              break;
+            }
+            case "meetup": {
+              createPage({
+                path: edge.node.frontmatter.path,
+                component: meetup
+              })
+              break;
+            }
+            default: {
+              createPage({
+                path: edge.node.frontmatter.path,
+                component: blogPost
+              })
+              break;
+            }
+          }
         })
       })
     )
