@@ -1,10 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import pic08 from '../assets/images/pic08.jpg'
+
 const MeetupPreview = (props) => (
     <section>
         <Link to={props.meetup.frontmatter.path} className="image">
-            <img src="" alt="" />
+            <img src={pic08} alt="" />
         </Link>
         <div className="content">
             <div className="inner">

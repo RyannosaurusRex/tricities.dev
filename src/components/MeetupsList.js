@@ -3,13 +3,11 @@ import Link from 'gatsby-link'
 import MeetupPreview from '../components/MeetupPreview'
 
 const MeetupsList = (props) => (
-    <div>
+    <section id="two" className="spotlights">
         {
             props.meetups.map((meetup) => {return <MeetupPreview meetup={meetup} key={meetup}/>})
         }
-    </div>
+    </section>
 )
 
 export default MeetupsList
-
-
