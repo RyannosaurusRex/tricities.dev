@@ -1,8 +1,8 @@
-const _ = require("lodash")
-const Promise = require("bluebird")
+const _ = require("./node_modules/lodash")
+const Promise = require("./node_modules/bluebird")
 const path = require("path")
 const select = require(`unist-util-select`)
-const fs = require(`fs-extra`)
+const fs = require(`./node_modules/fs-extra`)
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -20,8 +20,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges {
             node {
               frontmatter {
-                path,
-                twitter
+                path
+                type
               }
             }
           }

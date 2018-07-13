@@ -1,7 +1,7 @@
 ---
-title: TriDev
+title: TriPy
 date: "2017-05-01T22:12:03.284Z"
-path: "/TriDev/"
+path: "/TriPy/"
 type: "meetup"
 twitter: "https://twitter.com/RyannosaurusRex"
 bannerPhotoUrl: ""
