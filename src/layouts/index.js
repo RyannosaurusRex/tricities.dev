@@ -46,7 +46,7 @@ class Template extends React.Component {
                 </Helmet>
                 <div id="wrapper">
                     <Header onToggleMenu={this.handleToggleMenu} />
-                    {children()}
+                        {children()}
                     <Contact />
                     <Footer />
                 </div>

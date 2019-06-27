@@ -9,15 +9,18 @@ class PersonTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
-        <p>
-          {post.frontmatter.date}
-          {}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr/>
+      <div className="person">
+        <div className="inner">
+          <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+          <h1>{post.frontmatter.title}</h1>
+          <img src={post.frontmatter.headshotUrl} alt="" />
+          <p>
+            {post.frontmatter.date}
+            {}
+          </p>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <hr/>
+        </div>
       </div>
     )
   }
