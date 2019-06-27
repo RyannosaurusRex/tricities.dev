@@ -45,10 +45,10 @@ class Template extends React.Component {
                     <link rel="stylesheet" href={withPrefix('skel.css')} />
                 </Helmet>
                 <div id="wrapper">
-                    <Header onToggleMenu={this.handleToggleMenu} />
-                    {children()}
-                    <Contact />
-                    <Footer />
+                        <Header onToggleMenu={this.handleToggleMenu} />
+                                {children()}
+                        <Contact />
+                        <Footer />
                 </div>
                 <Menu onToggleMenu={this.handleToggleMenu} />
             </div>
