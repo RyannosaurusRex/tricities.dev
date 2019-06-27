@@ -11,7 +11,7 @@ const Banner = (props) => (
                     and Entrepreneurs in Kingsport, 
                     Johnson City, and Bristol, Tennessee</p>
                 <ul className="actions">
-                    <li><a href="#one" className="button next scrolly">Get Started</a></li>
+                    <li><a href="#one" className="button next scrolly">Learn More</a></li>
                 </ul>
             </div>
         </div>
