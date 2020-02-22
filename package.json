@@ -27,7 +27,7 @@
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different '**/*.{js,css,md,json}'",
     "analyze": "npm run analyze:lint && npm run analyze:prettier",
-    "build": "yarn run clean && gatsby build",
+    "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && node deploy",
     "develop": "gatsby develop",
     "fix:lint": "eslint --ext .jsx --ext .js . --fix",

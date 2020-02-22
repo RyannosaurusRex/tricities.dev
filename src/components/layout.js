@@ -34,7 +34,7 @@ function Layout({ children }) {
                     <svg className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
                     <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" fill="rgb(0,0,0)" />
                     <path className="plane-take-off" d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "/>
-                    </svg> TriDev | The NorthEast Tennessee Developer Meetup
+                    </svg> TriDev <span className="hidden lg:inline-block">| The NorthEast Tennessee Developer Meetup</span>
                   </a>
                 </div>
 
@@ -45,7 +45,7 @@ function Layout({ children }) {
                   </button>
                 </div>
 
-                <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+                {/* <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
                   <ul className="list-reset lg:flex justify-end flex-1 items-center">
                     <li className="mr-3">
                       <a className="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
@@ -59,7 +59,7 @@ function Layout({ children }) {
                             className="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 gradient text-white">Get Sources</button>
                   </form>
 
-                </div>
+                </div> */}
               </div>
               
               <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
@@ -75,12 +75,12 @@ function Layout({ children }) {
                   <h1 className="my-4 text-5xl font-bold leading-tight">TriDev</h1>
                   <p className="leading-normal text-2xl mb-8">
                     {/* {data.site.siteMetadata.title} */}The oldest and largest <a className="text-gray-800 font-bold underline" href="https://meetup.com/TriDev">Meetup</a> 
-                    {' '} and <a className="text-gray-800 font-bold underline" href="https://slack.tricities.dev">Online Community</a> for software developers in the Appalachian Highlands. 
+                    {' '} and <a className="text-gray-800 font-bold underline" href="https://slack.tricities.dev">Online Community</a> for software developers in Johnson City, TN and the Appalachian Highlands region. 
                   </p>
 
                   <form action={data.site.siteMetadata.github}>
                     <a href="https://meetup.com/TriDev" class="mx-2 lg:mx-1 md:mx-2 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">RSVP to the Meetup</a>
-                    <button type="submit" className="mx-2 lg:mx-1 md:mx-2 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Join us on Slack</button>
+                    <a href="https://slack.tricities.dev" class="mx-2 lg:mx-1 md:mx-2 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Join us on Slack</a>
                   </form>
 
                 </div>
@@ -112,7 +112,7 @@ function Layout({ children }) {
             {/* Alternate features */}
             <section className="bg-white border-b py-8">
               <div className="container max-w-5xl mx-auto m-8">
-                <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">{data.site.siteMetadata.title}</h2>
+                <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">About Us.</h2>
                 <div className="w-full mb-4">	
                   <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
@@ -127,7 +127,7 @@ function Layout({ children }) {
                     <a href="" class="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow gradient text-white">Join</a>
                   </div>
                   <div className="w-full sm:w-1/2 p-6">
-                  <svg className="w-5/6 sm:h-64 mx-auto" viewBox="0 0 1176.60617 873.97852" xmlns="http://www.w3.org/2000/svg">
+                  {/* <svg className="w-5/6 sm:h-64 mx-auto" viewBox="0 0 1176.60617 873.97852" xmlns="http://www.w3.org/2000/svg">
                     <title>connected world</title>
                     <path transform="translate(-11.697 -13.011)" d="m1095.7 225.46c-133.54-185.83-415.64-261.21-693.08-180.02-146.67 42.921-288.09 128.92-358.18 295.44-125.28 297.67 137.76 392.74 309.77 423.04 83.172 14.651 161.51 39.263 233.09 72.771 128.78 60.284 356.74 113.7 528.63-137.41 124.59-182.01 68.722-350.04-20.23-473.82z" fill="#f2f2f2"/>
                     <path transform="translate(-11.697 -13.011)" d="m321.43 262.23a34.385 34.385 0 0 0 -2.2476 -8.6046 3.8949 3.8949 0 0 0 -1.9801 -2.4388 4.0801 4.0801 0 0 0 -1.9647 -0.022l-10.087 1.5435a3.8669 3.8669 0 0 0 -2.3015 0.89427c-1.3138 1.3817-0.0201 3.6066-0.06032 5.5128-0.04523 2.1435-1.9497 3.8834-4.015 4.459a15.177 15.177 0 0 1 -6.3797 -0.0791l-14.105-2.1919a23.256 23.256 0 0 0 10.671 -7.1207c1.8562-2.1989 2.8437-6.3042 0.1611-7.3455a6.5854 6.5854 0 0 0 -2.4499 -0.19671c-6.3906 0.04969-11.419-5.286-17.402-7.5332a19.241 19.241 0 0 0 -21.655 6.4554l7.5139 0.36227a3.3352 3.3352 0 0 1 2.0015 0.53379c1.6467 1.353-0.40057 3.9517-0.16859 6.0702 0.3014 2.7525 3.9561 3.3402 6.711 3.6185s6.2499 2.5167 4.9247 4.9479c-13.847 4.7694-27.937-9.3231-42.479-7.5884-3.6805 0.43906-7.1558 1.8849-10.749 2.7941-21.951 5.5538-44.644-9.2644-67.068-6.1262a85.163 85.163 0 0 0 -14.64 3.8612c-3.0519 1.0021-6.2353 2.085-8.4528 4.409s-3.0615 6.2985-0.96073 8.7285a49.126 49.126 0 0 1 -17.216 -1.6365 9.645 9.645 0 0 1 4.9587 8.5003 102.15 102.15 0 0 0 -26.167 7.9788 44.073 44.073 0 0 0 5.416 7.2148l-11.445 7.353c3.8668 0.97425 5.866 6.2469 3.6173 9.54 4.0094-1.7837 6.4942-6.3979 10.782-7.3334 2.8088-0.61288 5.6669 0.53616 8.3314 1.6156s5.5932 2.1261 8.3517 1.316 4.793-4.3868 3.0402-6.6656a142.72 142.72 0 0 1 36.253 -5.6639 4.5466 4.5466 0 0 1 2.7456 0.52105c1.5982 1.1088 1.1777 3.5038 1.0916 5.4471s1.4285 4.4973 3.1654 3.6214c-2.0434 1.7719-0.29656 5.1076 1.6639 6.9709s4.3233 4.4343 3.1231 6.8581c-0.31325 0.63259-0.84455 1.1387-1.146 1.777-0.88965 1.8842 0.52289 4.0808 2.189 5.332s3.7069 2.1257 4.8643 3.8584 0.63178 4.7655-1.4378 5.0074l-5.8824-7.4687a15.314 15.314 0 0 0 -3.9736 7.5302c6.2378 5.0992 7.176 15.478 1.9538 21.613-2.6687 3.1352-6.4637 5.0403-9.776 7.4858s-6.3772 5.9278-6.3688 10.045c0.01439 7.1131-0.56681 13.721 2.0986 20.316a312.97 312.97 0 0 0 16.99 35.447c1.6808 3.0062 3.8532 6.3011 7.2582 6.8187q-6.455-15.714-11.621-31.917c2.2434 0.00878 4.8359 0.1869 6.151 2.0044 1.089 1.505 0.85507 3.5512 1.1934 5.3778a16.659 16.659 0 0 0 2.1245 4.9943l20.55 36.605c1.7035 3.0345 3.6576 6.2917 6.9133 7.5206 2.0816 0.78568 4.4899 0.63767 6.4058 1.7688 1.5018 0.88663 2.5132 2.4605 4.0442 3.2957 4.3288 2.3615 10.349-2.1675 14.394 0.652 1.1567 0.80618 1.8926 2.0869 2.9584 3.0099 3.7363 3.2356 9.8654 1.0711 14.179 3.4848 2.7798 1.5556 4.2204 4.6667 5.7031 7.486 3.7139 7.0621 9.7233 13.981 17.683 14.543 2.5002 0.17664 5.054-0.2974 7.4979 0.25869s4.8497 2.6889 4.4574 5.1645c-0.67255 4.244 1.4243 8.8911 0.86116 13.151-1.0258 7.7595-12.032 11.169-12.978 18.939-0.207 1.7012 0.117 3.4571-0.28806 5.1223-0.49646 2.0408-2.0292 3.7025-2.5738 5.731-1.0321 3.8442 1.7221 7.67 4.7477 10.256s6.6346 4.8164 8.2888 8.4368c1.7484 3.8266 0.88959 8.2885 1.4582 12.457 1.2413 9.1004 9.1016 15.847 17.191 20.197 2.4646 1.3253 5.1109 2.6084 6.7062 4.9076 2.0821 3.0009 1.8747 6.957 2.5699 10.543 1.7027 8.7816 9.0953 16.017 9.3052 24.96 0.14919 6.3561-3.384 12.122-5.4946 18.12a42.257 42.257 0 0 0 3.4506 35.046c1.5789 2.666 3.4672 5.1796 4.5841 8.0698 1.9931 5.1575 1.3464 11.02 3.1841 16.235 2.4296 6.8946 9.1056 12.589 8.4667 19.872 3.0309 6.2941 9.7237 9.3866 16.454 11.26l12.062 3.3575c2.3095 0.64288 4.7228 1.2909 7.0745 0.82537s4.596-2.4182 4.5353-4.8148c-5.9148-1.3339-12.019-2.7524-16.895-6.3567s-8.2158-10.023-6.3658-15.797c0.85781-2.6775 2.6828-5.7694 0.94774-7.9818-0.99343-1.2667-2.81-1.5977-3.9305-2.7534-1.7478-1.8026-1.1473-4.831 0.10918-7.0048s3.0726-4.1164 3.5794-6.5755a6.8609 6.8609 0 0 0 -3.2158 -7.1379 17.054 17.054 0 0 0 5.97 -3.8306c1.57-1.7929 2.2952-4.557 1.0602-6.5952 3.6675 0.46513 7.9974 0.69293 10.405-2.1126 1.9225-2.2403 1.7905-5.5897 1.0308-8.4424s-2.0436-5.6236-2.0836-8.5754a156.27 156.27 0 0 0 25.353 -0.85968 16.439 16.439 0 0 0 -7.7081 -9.6535c3.8106-0.64475 7.2821-5.2068 8.486-8.8792s0.89686-7.6727 0.15275-11.465a6.1519 6.1519 0 0 1 -0.114 -3.0037c0.42911-1.3675 1.7725-2.202 3.0153-2.9157l18.914-10.863a11.017 11.017 0 0 0 3.0246 -2.2329c1.9817-2.3277 1.6881-5.8415 0.67344-8.7252s-2.64-5.5953-3.0308-8.6272c-1.169-9.0676 8.5376-15.574 11.813-24.109 1.2856-3.3497 1.5476-6.9907 1.7963-10.57 0.2672-3.8443 0.28706-8.3096-2.6647-10.787-2.8295-2.3747-7.2505-1.845-10.211-4.0539-2.7145-2.0252-3.651-5.9583-6.6164-7.5941-2.693-1.4855-6.0696-0.54073-9.0648-1.2394-5.2736-1.2301-8.5924-7.3082-13.978-7.8709-3.0388-0.31753-6.4781 1.1681-8.9687-0.60169-2.1946-1.5594-2.2826-4.6938-2.7003-7.3534a20.536 20.536 0 0 0 -16.575 -16.628c-3.1332-0.50246-6.5436-0.31164-9.2091-2.0335-2.699-1.7435-3.9365-5.0078-6.0566-7.4223-3.4169-3.8914-8.7984-5.274-13.84-6.4591l-20.506-4.8206c-3.6401-0.85575-8.3322-1.3095-10.286 1.8791a14.738 14.738 0 0 0 -1.2167 3.8267 11.85 11.85 0 0 1 -11.144 8.3882 13.179 13.179 0 0 0 -7.7715 -6.0133c-2.0793-0.57947-4.3049-0.64392-6.288-1.4964a8.8327 8.8327 0 0 1 -3.8326 -12.253 10.995 10.995 0 0 0 -1.8788 -13.225c-3.4872-3.1307-8.5315-3.8871-13.207-3.5739-1.2246-2.6721 0.823-5.687 3.0296-7.6289s4.886-3.851 5.3665-6.7508c0.75588-4.5615-5.0643-8.026-9.4834-6.6659s-7.2396 5.6524-9.1041 9.8835c-1.0698 2.4276-1.9792 4.984-3.6666 7.031s-4.4048 3.5127-6.9751 2.8557c-3.6388-0.93-5.0441-5.2531-5.8494-8.9215-1.0805-4.9218-2.1673-9.9118-1.9409-14.946s1.9234-10.203 5.6354-13.61c6.0488-5.5531 15.328-5.0087 23.491-4.1229-1.9286-2.173-1.452-5.8352 0.61156-7.8805a8.9597 8.9597 0 0 1 8.1208 -1.9951 11.191 11.191 0 0 1 6.2912 3.7615c2.3198 2.8283 2.9795 6.647 4.7329 9.8573s5.6962 5.9485 8.9233 4.2262c2.7874-1.4876 3.2298-5.3528 2.5361-8.4352s-2.1671-6.0798-1.9158-9.2293c0.4795-6.0096 6.7091-9.627 12.206-12.102s11.792-5.8036 12.663-11.769a10.73 10.73 0 0 1 0.65234 -3.4203 6.7093 6.7093 0 0 1 2.4614 -2.3147c16.044-10.603 32.355-21.335 50.692-27.129 0.954-0.30143 1.066 0.03357 2.0383-0.20258 1.3607-0.78645 0.45911-2.962-0.84552-3.8385s-3.0484-1.5485-3.3794-3.085c-0.24331-1.1294 0.42213-2.2384 0.595-3.3807 0.42476-2.807-2.9332-5.3987-5.541-4.2764-1.473-1.9508 1.4416-4.2175 3.7984-4.8663a103.15 103.15 0 0 1 21.67 -3.54 3.9033 3.9033 0 0 1 2.4659 0.41943c1.2309 0.85266 1.0737 2.8084 0.20129 4.0254s-2.2294 1.9812-3.3165 3.011a9.0526 9.0526 0 0 0 -2.3481 9.105c3.826 1.9462 7.9855 3.9496 12.223 3.264s7.9986-5.4468 6.0068-9.2492c-1.8548-3.541-7.4263-4.3397-8.3844-8.2205-1.1218-4.5438 5.3104-8.585 3.8615-13.035-0.63466-1.9494-2.5774-3.0966-4.0681-4.504a12.221 12.221 0 0 1 -2.6744 -13.552 15.419 15.419 0 0 1 -13.523 -4.2317c-3.2345-3.2642-5.8149-8.4135-10.408-8.2675-4.2148 0.134-7.8452 5.0513-11.786 3.5511-0.96958-0.36907-1.9919-1.1202-2.9313-0.68012a2.4222 2.4222 0 0 0 -1.0934 1.815c-1.0015 4.7884 0.72138 10.244-1.8884 14.382-2.8399 4.5027-9.4088 5.1269-12.852 9.1872-1.8689 2.2041-2.593 5.174-4.3108 7.4978s-5.3639 3.8011-7.4255 1.7761a10.235 10.235 0 0 0 -2.7804 -12.445 27.309 27.309 0 0 0 -6.1412 -2.9871 36.422 36.422 0 0 1 -6.8608 -3.8237 6.7578 6.7578 0 0 1 -2.5186 -2.6949 6.1414 6.1414 0 0 1 0.17224 -4.2617 17.426 17.426 0 0 1 13.867 -11.494c2.7449-0.37343 5.9396-0.24185 7.7561-2.3333 0.96116-1.1066 1.4655-2.7797 2.8606-3.2291a4.2194 4.2194 0 0 1 2.6411 0.32524l10.245 3.6062a7.1908 7.1908 0 0 0 3.6498 0.60364 2.4745 2.4745 0 0 0 2.1396 -2.6005c-0.32735-1.7014-2.9454-2.5179-2.7071-4.234a2.8267 2.8267 0 0 1 0.85747 -1.4414 36.629 36.629 0 0 1 29.051 -11.472c1.2931 2.1238-0.752 4.6388-2.4537 6.4518s-3.0692 5.0525-1.0112 6.448a5.6425 5.6425 0 0 0 2.7279 0.61435 23.819 23.819 0 0 1 7.2608 2.2023q5.3105 2.3111 10.417 5.0572c-0.30072-2.2447-0.58773-4.6095 0.26309-6.7084s3.2689-3.7452 5.381-2.9278c2.0355 0.78775 3.0794 3.483 5.2481 3.7299 2.8928 0.32939 4.0341-3.9442 2.8257-6.5932s-3.6004-4.8669-3.8001-7.7716c-0.13471-1.9596 0.611-4.3899-0.95429-5.5765a4.2605 4.2605 0 0 0 -1.8468 -0.64758l-39.084-7.1922c-2.3209-0.42709-5.6742-0.09975-5.7771 2.2579-0.05746 1.316 1.1181 2.6179 0.59742 3.8279-0.55569 1.2914-2.3812 1.1733-3.7108 1.6301-2.0631 0.70871-3.0983 3.1584-2.9002 5.3308a14.834 14.834 0 0 0 2.448 6.0075c-2.5422-1.0632-6.3915-1.2586-8.9336-2.3218z" fill="#3f3d56"/>
@@ -161,7 +161,9 @@ function Layout({ children }) {
                     <circle cx="780.7" cy="309" r="11.968" fill="#ff6347"/>
                     <circle cx="991.17" cy="607.78" r="11.968" fill="#ff6347"/>
                     <circle cx="600.35" cy="480.68" r="11.968" fill="#ff6347"/>
-                    </svg>
+                    </svg> */}
+                      <svg className="w-5/6 sm:h-64 mx-auto" xmlns="http://www.w3.org/2000/svg" id="a829b389-c410-4f7b-96e4-605d098a680d" data-name="Layer 1" width="907" height="671.95" viewBox="0 0 907 671.95"><title>Building</title><circle cx="698.89" cy="78.11" r="78.11" fill="#ff5252"/><rect x="133.5" y="131.95" width="641" height="503" fill="#ff6347"/><rect x="133.5" y="131.95" width="641" height="503" opacity="0.1"/><rect y="200.95" width="907" height="437" fill="#464353"/><rect x="189" y="79.95" width="530" height="592" fill="#ff6347"/><rect x="37" y="259.95" width="112" height="72" fill="#ff6347"/><rect x="37" y="381.95" width="112" height="72" fill="#ff6347"/><rect x="37" y="503.95" width="112" height="72" fill="#ff6347"/><rect x="257" y="137.95" width="112" height="72" fill="#464353"/><rect x="257" y="259.95" width="112" height="72" fill="#464353"/><rect x="257" y="381.95" width="112" height="72" fill="#464353"/><rect x="685.5" y="251.98" width="112" height="72" transform="translate(1336.5 461.93) rotate(-180)" fill="#464353"/><rect x="685.5" y="373.98" width="112" height="72" transform="translate(1336.5 705.93) rotate(-180)" fill="#464353"/><rect x="685.5" y="495.98" width="112" height="72" transform="translate(1336.5 949.93) rotate(-180)" fill="#464353"/><rect x="750" y="259.95" width="112" height="72" fill="#ff6347"/><rect x="750" y="381.95" width="112" height="72" fill="#ff6347"/><rect x="750" y="503.95" width="112" height="72" fill="#ff6347"/><rect x="405" y="479.95" width="98" height="192" fill="#464353"/><rect x="257" y="137.95" width="112" height="22" opacity="0.1"/><rect x="539" y="137.95" width="112" height="22" opacity="0.1"/><rect x="539" y="259.95" width="112" height="22" opacity="0.1"/><rect x="539" y="381.95" width="112" height="22" opacity="0.1"/><rect x="257" y="259.95" width="112" height="22" opacity="0.1"/><rect x="257" y="381.95" width="112" height="22" opacity="0.1"/><rect x="37" y="259.95" width="112" height="17" opacity="0.1"/><rect x="37" y="381.95" width="112" height="17" opacity="0.1"/><rect x="37" y="503.95" width="112" height="17" opacity="0.1"/><rect x="750" y="259.95" width="112" height="17" opacity="0.1"/><rect x="750" y="381.95" width="112" height="17" opacity="0.1"/><rect x="750" y="503.95" width="112" height="17" opacity="0.1"/></svg>
+
                   </div>
                 </div>
                 
@@ -176,13 +178,13 @@ function Layout({ children }) {
                       <p className="text-gray-600 mb-8">
                         Can't make a meetup? We understand time and distance can be a 
                         factor in attending an event, but you're still a part of us! 
-                        Join hundreds of developers from around the region on Slack. 
+                        Join over a hundred developers from around the region on Slack. 
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="flex flex-wrap">
+                {/* <div className="flex flex-wrap">
                   <div className="w-5/6 sm:w-1/2 p-6">
                     <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Online Community</h3>
                     <p className="text-gray-600 mb-8">
@@ -195,12 +197,12 @@ function Layout({ children }) {
                   <div className="w-full sm:w-1/2 p-6">
                                         <svg className="w-5/6 sm:h-64 mx-auto" xmlns="http://www.w3.org/2000/svg" id="a829b389-c410-4f7b-96e4-605d098a680d" data-name="Layer 1" width="907" height="671.95" viewBox="0 0 907 671.95"><title>Building</title><circle cx="698.89" cy="78.11" r="78.11" fill="#ff5252"/><rect x="133.5" y="131.95" width="641" height="503" fill="#ff6347"/><rect x="133.5" y="131.95" width="641" height="503" opacity="0.1"/><rect y="200.95" width="907" height="437" fill="#464353"/><rect x="189" y="79.95" width="530" height="592" fill="#ff6347"/><rect x="37" y="259.95" width="112" height="72" fill="#ff6347"/><rect x="37" y="381.95" width="112" height="72" fill="#ff6347"/><rect x="37" y="503.95" width="112" height="72" fill="#ff6347"/><rect x="257" y="137.95" width="112" height="72" fill="#464353"/><rect x="257" y="259.95" width="112" height="72" fill="#464353"/><rect x="257" y="381.95" width="112" height="72" fill="#464353"/><rect x="685.5" y="251.98" width="112" height="72" transform="translate(1336.5 461.93) rotate(-180)" fill="#464353"/><rect x="685.5" y="373.98" width="112" height="72" transform="translate(1336.5 705.93) rotate(-180)" fill="#464353"/><rect x="685.5" y="495.98" width="112" height="72" transform="translate(1336.5 949.93) rotate(-180)" fill="#464353"/><rect x="750" y="259.95" width="112" height="72" fill="#ff6347"/><rect x="750" y="381.95" width="112" height="72" fill="#ff6347"/><rect x="750" y="503.95" width="112" height="72" fill="#ff6347"/><rect x="405" y="479.95" width="98" height="192" fill="#464353"/><rect x="257" y="137.95" width="112" height="22" opacity="0.1"/><rect x="539" y="137.95" width="112" height="22" opacity="0.1"/><rect x="539" y="259.95" width="112" height="22" opacity="0.1"/><rect x="539" y="381.95" width="112" height="22" opacity="0.1"/><rect x="257" y="259.95" width="112" height="22" opacity="0.1"/><rect x="257" y="381.95" width="112" height="22" opacity="0.1"/><rect x="37" y="259.95" width="112" height="17" opacity="0.1"/><rect x="37" y="381.95" width="112" height="17" opacity="0.1"/><rect x="37" y="503.95" width="112" height="17" opacity="0.1"/><rect x="750" y="259.95" width="112" height="17" opacity="0.1"/><rect x="750" y="381.95" width="112" height="17" opacity="0.1"/><rect x="750" y="503.95" width="112" height="17" opacity="0.1"/></svg>
                   </div>
-                </div>
+                </div> */}
               </div>
             </section>
 
             {/* Title cards */}
-            <section className="bg-white border-b py-8">
+            {/* <section className="bg-white border-b py-8">
               
               <div className="container mx-auto flex flex-wrap pt-4 pb-12">
               
@@ -267,7 +269,7 @@ function Layout({ children }) {
                 
               </div>
 
-            </section>
+            </section> */}
 
             {/* Pricing cards */}
             {/* <section className="bg-gray-100 py-8">
@@ -366,12 +368,12 @@ function Layout({ children }) {
                 <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
               </div>
 
-              <h3 className="my-4 text-3xl leading-tight">RSVP to the next Event!</h3>	
+              <h3 className="my-4 pb-4 text-3xl leading-tight">RSVP to the next Event!</h3>	
 
-              <form action={data.site.siteMetadata.blog}>
-                <button type="submit"
-                        className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Action!</button>
-              </form>
+              <div>
+                <a href="https://meetup.com/TriDev"
+                        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Join the Meetup</a>
+              </div>
 
             </section>
 
@@ -387,37 +389,37 @@ function Layout({ children }) {
                       <svg className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
                       <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" fill="rgb(0,0,0)" />
                       <path className="plane-take-off" d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "/>
-                      </svg> LANDING
+                      </svg> TriDev
                     </a>
                   </div>
                 
                 
                         <div className="flex-1">
-                            <p className="uppercase text-gray-500 md:mb-6">Links</p>
+                            <p className="uppercase text-gray-500 md:mb-6">Sponsors and Partners</p>
                             <ul className="list-reset mb-6">
                                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">FAQ</a>
+                                    <a href="https://myfoundersforge.com" className="no-underline hover:underline text-gray-800 hover:text-orange-500">FoundersForge</a>
                                 </li>
                                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Help</a>
+                                    <a href="https://sparkplaza.com" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Spark Plaza</a>
                                 </li>
                                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Support</a>
+                                    <a href="https://www.teksystems.com/" className="no-underline hover:underline text-gray-800 hover:text-orange-500">TekSystems</a>
                                 </li>
                             </ul>
                         </div>
                         <div className="flex-1">
-                            <p className="uppercase text-gray-500 md:mb-6">Legal</p>
+                            <p className="uppercase text-gray-500 md:mb-6"><br/></p>
                             <ul className="list-reset mb-6">
                                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Terms</a>
+                                    <a href="https://jetbrains.com" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Jetbrains</a>
                                 </li>
                                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                                     <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Privacy</a>
                                 </li>
                             </ul>
                         </div>
-                        <div className="flex-1">
+                        {/* <div className="flex-1">
                             <p className="uppercase text-gray-500 md:mb-6">Social</p>
                             <ul className="list-reset mb-6">
                                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -430,18 +432,15 @@ function Layout({ children }) {
                                     <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Twitter</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                         <div className="flex-1">
-                            <p className="uppercase text-gray-500 md:mb-6">Company</p>
+                            <p className="uppercase text-gray-500 md:mb-6">Organized By</p>
                             <ul className="list-reset mb-6">
                                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Official Blog</a>
+                                    <a href="https://ryanhayes.net" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Ryan Hayes</a>
                                 </li>
                                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">About Us</a>
-                                </li>
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Contact</a>
+                                    <a href="https://www.serointeractive.com/" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Jeff Rainey</a>
                                 </li>
                             </ul>
                         </div>
