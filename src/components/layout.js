@@ -79,8 +79,8 @@ function Layout({ children }) {
                   </p>
 
                   <form action={data.site.siteMetadata.github}>
-                    <a href="https://meetup.com/TriDev" class="mx-2 lg:mx-1 md:mx-2 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">RSVP to the Meetup</a>
-                    <a href="https://slack.tricities.dev" class="mx-2 lg:mx-1 md:mx-2 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Join us on Slack</a>
+                    {/*<a href="https://meetup.com/TriDev" class="mx-2 lg:mx-1 md:mx-2 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">The Meetup</a>
+                    <a href="https://slack.tricities.dev" class="mx-2 lg:mx-1 md:mx-2 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Join us on Slack</a> */}
                   </form>
 
                 </div>
