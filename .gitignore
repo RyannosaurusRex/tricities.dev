@@ -1,7 +1,15 @@
-node_modules/
-public
-.gatsby-context.js
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+.cache
+node_modules
+yarn-error.log
+
+# Build directory
+/public
+
+# macOS
 .DS_Store
-.intermediate-representation/
-.cache/
-yarn.lock
+
+# deployment-specific configs
+now.json
+deploy.js

@@ -1,56 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Forty by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Forty by HTML5 UP"
+    title: `TriDev`,
+    description: `GatsbyJS Starter styled with Tailwind CSS`,
+    author: `@Sm0keDev`,
+    github: `https://github.com/app-generator/gatsbyjs-starter-tailwindplay`,
+    blog: `https://blog.appseed.us/tag/gatsbyjs`,
+    product: `https://appseed.us/apps/gatsbyjs`,
+    docs: `https://docs.appseed.us/apps/gatsbyjs`
+
   },
-  pathPrefix: '/',
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/posts`,
-        name: "posts",
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `meetups`,
-        path: `${__dirname}/src/meetups`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `people`,
-        path: `${__dirname}/src/people`
-      }
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 630,
-            },
-          },
-          "gatsby-remark-copy-linked-files",
-        ],
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`
-  ],
-}
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-tailwind`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#4dc0b5`,
+        display: `minimal-ui`,
+        icon: `src/images/tailwind-icon.png`
+      }
+    },
+    `gatsby-plugin-postcss`,
+    {
+      resolve: "gatsby-plugin-purgecss",
+      options: {
+        tailwind: true,
+        purgeOnly: ["src/css/style.css", "src/css/global.css"]
+      }
+    }
+  ]
+};
