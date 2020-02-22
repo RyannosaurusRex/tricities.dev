@@ -124,7 +124,7 @@ function Layout({ children }) {
                     Join us the second Tuesday of every month at 6PM for our meetup at Spark Plaza in downtown Johnson City, Tennessee. Free food, software and developer tools giveaways, a tech talk and conversation.
 
                     </p>
-                    <a href="" class="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow gradient text-white">Join</a>
+                    <a href="https://meetup.com/TriDev" class="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow gradient text-white">Join</a>
                   </div>
                   <div className="w-full sm:w-1/2 p-6">
                   {/* <svg className="w-5/6 sm:h-64 mx-auto" viewBox="0 0 1176.60617 873.97852" xmlns="http://www.w3.org/2000/svg">
@@ -180,6 +180,8 @@ function Layout({ children }) {
                         factor in attending an event, but you're still a part of us! 
                         Join over a hundred developers from around the region on Slack. 
                       </p>
+                      <a href="https://slack.tricities.dev" class="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow gradient text-white">Join</a>
+
                     </div>
                   </div>
                 </div>
